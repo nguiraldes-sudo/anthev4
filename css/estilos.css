@@ -1,0 +1,609 @@
+/* ===== Paleta ===== */
+:root {
+  --verde: #1f342e;
+  --verde-hover: #2b473f;
+  --crema: #f5eee6;
+  --crema-card: #f7f3ec;
+  --beige: #e0d4c2;
+
+  --bs-body-bg: var(--crema);          /* fondo general del sitio */
+}
+/* ===== Tipografía General (AGREGAR AQUÍ) ===== */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Aparición suave de la página (sin JS) ===== */
+@keyframes aparecer {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body { animation: aparecer 0.8s ease-in-out; }
+}
+
+/* ===== Fondo de marca (headers y footer) ===== */
+.bg-marca {
+  background-color: var(--verde);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-brand-padding-y: 0;
+  --bs-navbar-color: var(--beige);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: var(--beige);
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-toggler-border-color: var(--beige);
+  background-color: var(--verde);
+}
+/* El disparador de Shop es un botón por su submenú; iguala la tipografía
+   y el aspecto de los enlaces vecinos de la navegación. */
+.navbar .navbar-nav .dropdown-toggle {
+  font: inherit;
+  letter-spacing: inherit;
+  color: var(--bs-navbar-color);
+  text-align: left;
+  background: transparent;
+  border: 0;
+}
+.navbar .navbar-nav .dropdown-toggle:hover,
+.navbar .navbar-nav .dropdown-toggle:focus-visible {
+  color: var(--bs-navbar-hover-color);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-navbar {
+  height: 3.5rem;
+  width: auto;
+}
+@media (max-width: 576px) {
+  .logo-navbar { height: 2.8rem; }
+}
+
+/* Botón del carrito */
+.navbar .btn-outline-light {
+  --bs-btn-color: var(--crema);
+  --bs-btn-border-color: var(--crema);
+  --bs-btn-hover-color: var(--verde);
+  --bs-btn-hover-bg: var(--crema);
+  --bs-btn-hover-border-color: var(--crema);
+  --bs-btn-active-color: var(--verde);
+  --bs-btn-active-bg: var(--crema);
+  --bs-btn-active-border-color: var(--crema);
+}
+.navbar .badge {
+  background-color: var(--beige);
+  color: var(--verde);
+}
+.navbar .btn:hover .badge {
+  background-color: var(--verde);
+  color: var(--beige);
+}
+
+/* Color del menú desplegable */
+.navbar .dropdown-menu {
+  background-color: var(--verde);
+  border-color: var(--verde-hover);
+}
+.navbar .dropdown-item {
+  color: var(--beige);
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: var(--verde-hover);
+  color: #fff;
+}
+.navbar .dropdown-divider {
+  border-color: var(--verde-hover);
+}
+/* ===== Botones ===== */
+.btn-dark {
+  --bs-btn-bg: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-bg: var(--verde-hover);
+  --bs-btn-hover-border-color: var(--verde-hover);
+  --bs-btn-active-bg: var(--verde-hover);
+  --bs-btn-active-border-color: var(--verde-hover);
+  --bs-btn-disabled-bg: var(--verde);
+  --bs-btn-disabled-border-color: var(--verde);
+}
+.btn-outline-dark {
+  --bs-btn-color: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-bg: var(--verde);
+  --bs-btn-hover-border-color: var(--verde);
+  --bs-btn-active-bg: var(--verde);
+  --bs-btn-active-border-color: var(--verde);
+}
+
+/* ===== Carrusel / banner ===== */
+#miCarrusel {
+  height: 200px;                       /* celular */
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #miCarrusel { height: 250px; }       /* tablet */
+}
+@media (min-width: 992px) {
+  #miCarrusel { height: 300px; }       /* computador */
+}
+
+#miCarrusel .carousel-inner,
+#miCarrusel .carousel-item {
+  height: 100%;
+}
+#miCarrusel .carousel-item {
+  overflow: hidden;                    /* para que el zoom no se salga */
+}
+#miCarrusel .carousel-item > a {       /* cada foto es un link al producto */
+  display: block;
+  height: 100%;
+}
+#miCarrusel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 60%;
+}
+
+/* Zoom lento */
+@keyframes zoomLento {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #miCarrusel .carousel-item.active img {
+    animation: zoomLento 6s ease-out forwards;
+  }
+}
+
+/* Indicadores (rayitas) */
+#miCarrusel .carousel-indicators {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#miCarrusel .carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 6px; /* Mantenemos el alto parejo */
+  margin: 0;
+  border: 0;
+  border-radius: 10px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+#miCarrusel .carousel-indicators .active {
+  width: 60px; /* Solo se expande a lo ancho */
+}
+
+
+/* Flechas */
+#miCarrusel .carousel-control-prev,
+#miCarrusel .carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+#miCarrusel .carousel-control-prev:hover,
+#miCarrusel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* ===== Productos destacados (inicio) ===== */
+#destacados {
+  min-height: 450px;                   /* evita que la página salte al cambiar */
+  transition: opacity 0.5s ease-in-out;
+}
+#destacados.fade-out {
+  opacity: 0;
+}
+
+/* ===== Tarjetas (iguales en todas las páginas) ===== */
+/* ===== Efecto Hover suave en Tarjetas ===== */
+.card {
+  --bs-card-bg: var(--crema-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.25rem rgba(31, 52, 46, 0.12);
+}
+/* Transición en la foto de la tarjeta */
+.card .ratio img {
+  transition: transform 0.4s ease;
+}
+
+/* Al pasar el mouse por la tarjeta, la foto hace un pequeño zoom */
+.card:hover .ratio img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 0.75rem 0.5rem 0.25rem;
+}
+.card-body h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.card-footer {
+  padding: 0.25rem 0.5rem 0.75rem;
+}
+
+/* Imagen y nombre clickeables */
+.enlace-producto {
+  color: inherit;
+  text-decoration: none;
+}
+.enlace-producto:hover {
+  color: inherit;
+}
+h2 .enlace-producto:hover,
+.card:has(.card-img-top:hover) h2 .enlace-producto {
+  text-decoration: underline;          /* también al pasar por la imagen */
+}
+
+/* Etiqueta "Nuevo" sobre la foto */
+.etiqueta-nuevo {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2;
+  padding: 0.15rem 0.6rem;
+  border-radius: 1rem;
+  background-color: var(--verde);
+  color: var(--crema);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ===== Filtros del catálogo ===== */
+.panel-filtros {
+  padding: 1rem;
+  border: 1px solid var(--bs-border-color-translucent);
+  border-radius: 0.5rem;
+  background-color: var(--crema-card);
+}
+.panel-filtros legend {
+  float: none;
+  width: auto;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.panel-filtros fieldset {
+  border: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .panel-filtros {
+    position: sticky;
+    top: 5.5rem;                       /* queda a la vista bajo el navbar */
+  }
+}
+
+/* Controles de formulario con el color de la marca */
+.form-check-input:checked {
+  background-color: var(--verde);
+  border-color: var(--verde);
+}
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.25rem rgba(31, 52, 46, 0.2);
+}
+
+/* ===== Paginación ===== */
+.pagination {
+  --bs-pagination-color: var(--verde);
+  --bs-pagination-hover-color: var(--verde-hover);
+  --bs-pagination-focus-color: var(--verde-hover);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(31, 52, 46, 0.2);
+  --bs-pagination-active-bg: var(--verde);
+  --bs-pagination-active-border-color: var(--verde);
+}
+
+/* ===== Migas de pan ===== */
+.breadcrumb-item a {
+  color: var(--verde);
+  font-weight: 500;
+  text-decoration: none;
+}
+.breadcrumb-item a:hover {
+  color: #0d1714;
+  text-decoration: underline;
+}
+
+/* ===== Tabla del carrito ===== */
+.table-dark {
+  --bs-table-bg: var(--verde);
+  --bs-table-border-color: var(--verde-hover);
+}
+.table tr {
+  transition: background-color 0.2s ease;
+}
+
+/* ===== Página de carrito, con la presentación de v3 adaptada a v4 ===== */
+.cart-page {
+  min-height: 32rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.cart-eyebrow {
+  margin-bottom: .35rem;
+  color: var(--verde-hover);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.cart-page h1 {
+  margin-bottom: .5rem;
+  color: var(--verde);
+  font-size: clamp(2.2rem, 5vw, 3.25rem);
+}
+.cart-intro, .cart-note { color: #68736e; }
+.cart-empty {
+  max-width: 42rem;
+  padding: 3rem 1.5rem;
+  margin-top: 2rem;
+  color: #68736e;
+  background: var(--crema-card);
+  border: 1px solid rgba(31, 52, 46, .12);
+  text-align: center;
+}
+.cart-empty > i {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--verde);
+  font-size: 3rem;
+}
+.cart-empty h2 { color: var(--verde); }
+.cart-empty p { margin-bottom: 0; }
+.cart-table-wrap {
+  margin-top: 2rem;
+  border: 1px solid rgba(31, 52, 46, .12);
+}
+.cart-table { min-width: 42rem; background: var(--crema-card); }
+.cart-table thead th {
+  padding: 1rem;
+  color: var(--crema);
+  background: var(--verde);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.cart-table tbody th, .cart-table tbody td {
+  padding: 1rem;
+  border-color: rgba(31, 52, 46, .12);
+}
+.cart-product-name { color: var(--verde); }
+.cart-quantity { display: inline-flex; align-items: center; gap: .3rem; }
+.quantity-button, .remove-button {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--verde);
+  border-radius: 50%;
+  color: var(--verde);
+  background: transparent;
+}
+.quantity-button:hover, .remove-button:hover { color: #fff; background: var(--verde); }
+.quantity { min-width: 1.75rem; text-align: center; }
+.remove-button { border-color: #a74a43; color: #a74a43; }
+.remove-button:hover { background: #a74a43; }
+.cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--crema-card);
+  border-top: 1px solid rgba(31, 52, 46, .12);
+}
+.cart-clear { padding: .35rem 0; color: #68736e; text-decoration: underline; }
+.cart-total { display: flex; align-items: baseline; gap: 1rem; color: var(--verde); }
+.cart-total strong { font-size: 1.3rem; }
+.cart-note { margin: 1rem 0; font-size: .9rem; }
+.cart-continue-link { margin-left: 1rem; color: var(--verde); font-size: .9rem; }
+@media (max-width: 575.98px) {
+  .cart-page { padding-top: 2.75rem; padding-bottom: 3rem; }
+  .cart-summary { align-items: flex-start; flex-direction: column-reverse; }
+  .cart-continue-link { display: block; margin: 1rem 0 0; }
+}
+
+
+/* ===== Botones más amplios y cómodos en pantallas táctiles ===== */
+@media (max-width: 576px) {
+  .btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .card-body h2 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== Sombra sutil al fijar el Navbar ===== */
+.navbar.sticky-top {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-whatsapp-flotante {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.btn-whatsapp-flotante:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ===== Banner Superior (Marquesina Infinita Forzada) ===== */
+.top-bar {
+  background-color: var(--beige);
+  color: var(--verde);
+  font-size: 0.85rem;
+  font-weight: 500;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  width: 100%;
+  display: block;
+}
+
+/* Animación del banner */
+.top-bar-marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: moverMarquee 22s linear infinite;
+}
+
+@keyframes moverMarquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+
+
+
+/* Mejoras de jerarquía visual y ajuste en pantallas estrechas para v4. */
+.featured-heading {
+  max-width: 48rem;
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+.featured-heading .eyebrow { margin-bottom: .35rem; }
+.featured-heading h1 {
+  margin-bottom: .5rem;
+  color: var(--verde);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.featured-heading p:last-child {
+  max-width: 48ch;
+  margin: 0 auto;
+  color: #68736e;
+}
+.card-body h2 {
+  margin-bottom: .25rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.card-img-top { object-fit: cover; }
+.fs-7 { font-size: .75rem !important; }
+
+@media (max-width: 575.98px) {
+  #miCarrusel .carousel-indicators {
+    gap: 5px;
+    margin: 0 1rem .75rem;
+  }
+  #miCarrusel .carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 4px;
+  }
+  #miCarrusel .carousel-indicators .active { width: 32px; }
+  .featured-heading { margin-bottom: 1.25rem; }
+  .card-body h2 { font-size: .92rem; }
+  .footer .container > .row { row-gap: 1.5rem; }
+  .footer a, .footer li { overflow-wrap: anywhere; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top-bar-marquee {
+    display: block;
+    padding-left: 0;
+    animation: none;
+    text-align: center;
+    white-space: normal;
+  }
+  .btn-whatsapp-flotante,
+  .card,
+  .card .ratio img { transition: none; }
+}
+
+/* Menú móvil lateral y alineación derecha para escritorio. */
+@media (max-width: 991.98px) {
+  #menuPrincipal {
+    position: fixed;
+    z-index: 1050;
+    inset: 0 0 0 auto;
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    width: min(24rem, 88vw);
+    height: 100vh;
+    height: 100dvh;
+    padding: 1.25rem;
+    margin: 0;
+    overflow-y: auto;
+    background: var(--verde);
+    box-shadow: -.5rem 0 1.5rem rgba(0, 0, 0, .2);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform .32s ease, visibility .32s ease;
+  }
+  #menuPrincipal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  #menuPrincipal .menu-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #menuPrincipal .menu-panel-title {
+    margin: 0;
+    color: var(--crema);
+  }
+  #menuPrincipal .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .3rem;
+    margin: 0 !important;
+  }
+  #menuPrincipal .nav-link { padding: .75rem 0; }
+  #menuPrincipal > .btn { align-self: flex-start; margin: 0 !important; }
+}
+
+@media (min-width: 992px) {
+  #menuPrincipal {
+    display: flex !important;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+  #menuPrincipal .menu-panel-header { display: none; }
+  #menuPrincipal .navbar-nav {
+    flex-direction: row;
+    margin: 0 0 0 auto !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #menuPrincipal { transition: none; }
+}

@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anthe Shop &amp; bisutería - Pulseras y accesorios hechos a mano.">
+  <title>Anthe Shop</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar py-1 text-center">
+    <div class="top-bar-marquee">✨ Entregas presenciales en San Felipe y Los Andes &nbsp;&bull;&nbsp; Envíos a todo Chile 🇨🇱 &nbsp;&bull;&nbsp; ✨ Entregas presenciales en San Felipe y Los Andes &nbsp;&bull;&nbsp; Envíos a todo Chile 🇨🇱</div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Navegación principal">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logosinfondo.png" alt="Logo Anthe Shop" class="logo-navbar" width="2838" height="2856">
+        <span>Anthe Shop</span>
+      </a>
+      <button class="navbar-toggler" id="menuToggle" type="button" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="menuPrincipal" aria-hidden="true" inert>
+        <div class="menu-panel-header">
+          <h2 class="menu-panel-title">Menú</h2>
+          <button class="btn-close btn-close-white" type="button" data-menu-close aria-label="Cerrar menú"></button>
+        </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" id="menuShop" type="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuShop">
+              <li><a class="dropdown-item" href="index.html#destacados">Todos los productos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html#destacados">Pulseras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#destacados">Populares</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#destacados">Nuevos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacto">Sobre nosotros</a></li>
+        </ul>
+        <a class="btn btn-outline-light ms-lg-3" href="carrito.html">
+          <i class="bi-cart-fill me-1"></i> Carrito <span id="contador-carrito" class="badge ms-1 rounded-pill">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" data-product-id="1" class="active" aria-current="true" aria-label="Foto 1"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1" data-product-id="2" aria-label="Foto 2"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2" data-product-id="3" aria-label="Foto 3"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="3" data-product-id="4" aria-label="Foto 4"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="4" data-product-id="5" aria-label="Foto 5"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="5" data-product-id="6" aria-label="Foto 6"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="6" data-product-id="7" aria-label="Foto 7"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="7" data-product-id="8" aria-label="Foto 8"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="8" data-product-id="9" aria-label="Foto 9"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="9" data-product-id="10" aria-label="Foto 10"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="10" data-product-id="11" aria-label="Foto 11"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="11" data-product-id="12" aria-label="Foto 12"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="12" data-product-id="13" aria-label="Foto 13"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="13" data-product-id="14" aria-label="Foto 14"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="14" data-product-id="15" aria-label="Foto 15"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="15" data-product-id="16" aria-label="Foto 16"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="16" data-product-id="17" aria-label="Foto 17"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="17" data-product-id="18" aria-label="Foto 18"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="18" data-product-id="19" aria-label="Foto 19"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="19" data-product-id="20" aria-label="Foto 20"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="20" data-product-id="21" aria-label="Foto 21"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="21" data-product-id="22" aria-label="Foto 22"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="22" data-product-id="23" aria-label="Foto 23"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="23" data-product-id="24" aria-label="Foto 24"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="24" data-product-id="25" aria-label="Foto 25"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="25" data-product-id="26" aria-label="Foto 26"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="26" data-product-id="27" aria-label="Foto 27"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="27" data-product-id="28" aria-label="Foto 28"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="28" data-product-id="29" aria-label="Foto 29"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="29" data-product-id="30" aria-label="Foto 30"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="30" data-product-id="31" aria-label="Foto 31"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="31" data-product-id="32" aria-label="Foto 32"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="32" data-product-id="33" aria-label="Foto 33"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="33" data-product-id="34" aria-label="Foto 34"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="34" data-product-id="35" aria-label="Foto 35"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="35" data-product-id="36" aria-label="Foto 36"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="36" data-product-id="37" aria-label="Foto 37"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="37" data-product-id="38" aria-label="Foto 38"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="38" data-product-id="39" aria-label="Foto 39"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="39" data-product-id="40" aria-label="Foto 40"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="40" data-product-id="41" aria-label="Foto 41"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="41" data-product-id="42" aria-label="Foto 42"></button>
+            <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="42" data-product-id="43" aria-label="Foto 43"></button>
+      </div>
+      <div class="carousel-inner">
+            <div class="carousel-item active" data-product-id="1">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 1">
+                <img src="assets/pulsera1.webp" class="d-block w-100" alt="Pulsera 1" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="2">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 2">
+                <img src="assets/pulsera2.webp" class="d-block w-100" alt="Pulsera 2" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="3">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 3">
+                <img src="assets/pulsera3.webp" class="d-block w-100" alt="Pulsera 3" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="4">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 4">
+                <img src="assets/pulsera4.webp" class="d-block w-100" alt="Pulsera 4" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="5">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 5">
+                <img src="assets/pulsera5.webp" class="d-block w-100" alt="Pulsera 5" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="6">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 6">
+                <img src="assets/pulsera6.webp" class="d-block w-100" alt="Pulsera 6" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="7">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 7">
+                <img src="assets/pulsera7.webp" class="d-block w-100" alt="Pulsera 7" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="8">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 8">
+                <img src="assets/pulsera8.webp" class="d-block w-100" alt="Pulsera 8" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="9">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 9">
+                <img src="assets/pulsera9.webp" class="d-block w-100" alt="Pulsera 9" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="10">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 10">
+                <img src="assets/pulsera10.webp" class="d-block w-100" alt="Pulsera 10" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="11">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 11">
+                <img src="assets/pulsera11.webp" class="d-block w-100" alt="Pulsera 11" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="12">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 12">
+                <img src="assets/pulsera12.webp" class="d-block w-100" alt="Pulsera 12" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="13">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 13">
+                <img src="assets/pulsera13.webp" class="d-block w-100" alt="Pulsera 13" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="14">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 14">
+                <img src="assets/pulsera14.webp" class="d-block w-100" alt="Pulsera 14" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="15">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 15">
+                <img src="assets/pulsera15.webp" class="d-block w-100" alt="Pulsera 15" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="16">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 16">
+                <img src="assets/pulsera16.webp" class="d-block w-100" alt="Pulsera 16" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="17">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 17">
+                <img src="assets/pulsera17.webp" class="d-block w-100" alt="Pulsera 17" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="18">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 18">
+                <img src="assets/pulsera18.webp" class="d-block w-100" alt="Pulsera 18" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="19">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 19">
+                <img src="assets/pulsera19.webp" class="d-block w-100" alt="Pulsera 19" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="20">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 20">
+                <img src="assets/pulsera20.webp" class="d-block w-100" alt="Pulsera 20" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="21">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 21">
+                <img src="assets/pulsera21.webp" class="d-block w-100" alt="Pulsera 21" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="22">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 22">
+                <img src="assets/pulsera22.webp" class="d-block w-100" alt="Pulsera 22" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="23">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 23">
+                <img src="assets/pulsera23.webp" class="d-block w-100" alt="Pulsera 23" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="24">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 24">
+                <img src="assets/pulsera24.webp" class="d-block w-100" alt="Pulsera 24" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="25">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 25">
+                <img src="assets/pulsera25.webp" class="d-block w-100" alt="Pulsera 25" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="26">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 26">
+                <img src="assets/pulsera26.webp" class="d-block w-100" alt="Pulsera 26" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="27">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 27">
+                <img src="assets/pulsera27.webp" class="d-block w-100" alt="Pulsera 27" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="28">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 28">
+                <img src="assets/pulsera28.webp" class="d-block w-100" alt="Pulsera 28" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="29">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 29">
+                <img src="assets/pulsera29.webp" class="d-block w-100" alt="Pulsera 29" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="30">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 30">
+                <img src="assets/pulsera30.webp" class="d-block w-100" alt="Pulsera 30" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="31">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 31">
+                <img src="assets/pulsera31.webp" class="d-block w-100" alt="Pulsera 31" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="32">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 32">
+                <img src="assets/pulsera32.webp" class="d-block w-100" alt="Pulsera 32" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="33">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 33">
+                <img src="assets/pulsera33.webp" class="d-block w-100" alt="Pulsera 33" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="34">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 34">
+                <img src="assets/pulsera34.webp" class="d-block w-100" alt="Pulsera 34" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="35">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 35">
+                <img src="assets/pulsera35.webp" class="d-block w-100" alt="Pulsera 35" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="36">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 36">
+                <img src="assets/pulsera36.webp" class="d-block w-100" alt="Pulsera 36" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="37">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 37">
+                <img src="assets/pulsera37.webp" class="d-block w-100" alt="Pulsera 37" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="38">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 38">
+                <img src="assets/pulsera38.webp" class="d-block w-100" alt="Pulsera 38" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="39">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 39">
+                <img src="assets/pulsera39.webp" class="d-block w-100" alt="Pulsera 39" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="40">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 40">
+                <img src="assets/pulsera40.webp" class="d-block w-100" alt="Pulsera 40" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="41">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 41">
+                <img src="assets/pulsera41.webp" class="d-block w-100" alt="Pulsera 41" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="42">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 42">
+                <img src="assets/pulsera42.webp" class="d-block w-100" alt="Pulsera 42" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+            <div class="carousel-item" data-product-id="43">
+              <a href="index.html#destacados" aria-label="Ver Pulsera 43">
+                <img src="assets/pulsera43.webp" class="d-block w-100" alt="Pulsera 43" width="2296" height="2296" loading="lazy">
+              </a>
+            </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-4 pb-5" aria-labelledby="destacados-title">
+      <div class="container px-4 px-lg-5">
+        <header class="featured-heading">
+          <p class="eyebrow">Selección Anthe</p>
+          <h1 id="destacados-title">Pulseras destacadas</h1>
+          <p>Encuentra un detalle hecho a mano para acompañarte.</p>
+        </header>
+        <div id="destacados" class="row g-3 g-lg-4 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <article class="col" data-product-id="1">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 1">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera1.webp" alt="Pulsera 1" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 1</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="1" data-nombre="Pulsera 1" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="2">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 2">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera2.webp" alt="Pulsera 2" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 2</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="2" data-nombre="Pulsera 2" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="3">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 3">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera3.webp" alt="Pulsera 3" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 3</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="3" data-nombre="Pulsera 3" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="4">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 4">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera4.webp" alt="Pulsera 4" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 4</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="4" data-nombre="Pulsera 4" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="5">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 5">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera5.webp" alt="Pulsera 5" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 5</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="5" data-nombre="Pulsera 5" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="6">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 6">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera6.webp" alt="Pulsera 6" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 6</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="6" data-nombre="Pulsera 6" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="7">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 7">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera7.webp" alt="Pulsera 7" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 7</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="7" data-nombre="Pulsera 7" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="8">
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 8">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera8.webp" alt="Pulsera 8" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 8</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="8" data-nombre="Pulsera 8" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="9" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 9">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera9.webp" alt="Pulsera 9" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 9</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="9" data-nombre="Pulsera 9" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="10" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 10">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera10.webp" alt="Pulsera 10" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 10</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="10" data-nombre="Pulsera 10" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="11" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 11">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera11.webp" alt="Pulsera 11" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 11</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="11" data-nombre="Pulsera 11" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="12" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 12">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera12.webp" alt="Pulsera 12" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 12</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="12" data-nombre="Pulsera 12" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="13" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 13">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera13.webp" alt="Pulsera 13" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 13</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="13" data-nombre="Pulsera 13" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="14" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 14">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera14.webp" alt="Pulsera 14" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 14</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="14" data-nombre="Pulsera 14" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="15" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 15">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera15.webp" alt="Pulsera 15" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 15</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="15" data-nombre="Pulsera 15" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="16" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 16">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera16.webp" alt="Pulsera 16" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 16</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="16" data-nombre="Pulsera 16" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="17" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 17">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera17.webp" alt="Pulsera 17" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 17</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="17" data-nombre="Pulsera 17" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="18" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 18">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera18.webp" alt="Pulsera 18" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 18</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="18" data-nombre="Pulsera 18" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="19" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 19">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera19.webp" alt="Pulsera 19" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 19</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="19" data-nombre="Pulsera 19" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="20" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 20">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera20.webp" alt="Pulsera 20" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 20</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="20" data-nombre="Pulsera 20" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="21" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 21">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera21.webp" alt="Pulsera 21" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 21</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="21" data-nombre="Pulsera 21" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="22" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 22">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera22.webp" alt="Pulsera 22" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 22</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="22" data-nombre="Pulsera 22" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="23" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 23">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera23.webp" alt="Pulsera 23" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 23</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="23" data-nombre="Pulsera 23" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="24" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 24">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera24.webp" alt="Pulsera 24" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 24</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="24" data-nombre="Pulsera 24" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="25" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 25">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera25.webp" alt="Pulsera 25" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 25</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="25" data-nombre="Pulsera 25" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="26" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 26">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera26.webp" alt="Pulsera 26" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 26</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="26" data-nombre="Pulsera 26" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="27" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 27">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera27.webp" alt="Pulsera 27" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 27</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="27" data-nombre="Pulsera 27" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="28" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 28">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera28.webp" alt="Pulsera 28" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 28</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="28" data-nombre="Pulsera 28" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="29" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 29">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera29.webp" alt="Pulsera 29" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 29</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="29" data-nombre="Pulsera 29" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="30" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 30">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera30.webp" alt="Pulsera 30" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 30</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="30" data-nombre="Pulsera 30" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="31" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 31">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera31.webp" alt="Pulsera 31" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 31</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="31" data-nombre="Pulsera 31" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="32" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 32">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera32.webp" alt="Pulsera 32" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 32</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="32" data-nombre="Pulsera 32" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="33" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 33">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera33.webp" alt="Pulsera 33" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 33</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="33" data-nombre="Pulsera 33" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="34" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 34">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera34.webp" alt="Pulsera 34" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 34</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="34" data-nombre="Pulsera 34" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="35" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 35">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera35.webp" alt="Pulsera 35" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 35</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="35" data-nombre="Pulsera 35" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="36" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 36">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera36.webp" alt="Pulsera 36" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 36</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="36" data-nombre="Pulsera 36" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="37" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 37">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera37.webp" alt="Pulsera 37" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 37</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="37" data-nombre="Pulsera 37" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="38" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 38">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera38.webp" alt="Pulsera 38" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 38</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="38" data-nombre="Pulsera 38" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="39" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 39">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera39.webp" alt="Pulsera 39" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 39</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="39" data-nombre="Pulsera 39" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="40" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 40">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera40.webp" alt="Pulsera 40" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 40</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="40" data-nombre="Pulsera 40" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="41" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 41">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera41.webp" alt="Pulsera 41" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 41</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="41" data-nombre="Pulsera 41" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="42" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 42">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera42.webp" alt="Pulsera 42" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 42</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="42" data-nombre="Pulsera 42" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-product-id="43" hidden>
+              <div class="card h-100 shadow-sm border-0 overflow-hidden position-relative">
+                <span class="etiqueta-nuevo">Nuevo</span>
+                <div class="ratio ratio-1x1 bg-light overflow-hidden">
+                  <a href="index.html#destacados" aria-label="Ver Pulsera 43">
+                    <img class="card-img-top w-100 h-100 object-fit-cover" src="assets/pulsera43.webp" alt="Pulsera 43" loading="lazy" width="2296" height="2296">
+                  </a>
+                </div>
+                <div class="card-body text-center d-flex flex-column justify-content-between p-3">
+                  <div>
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1 d-block">Pulseras</span>
+                    <h2 class="fw-bolder mb-2"><a href="index.html#destacados" class="enlace-producto text-dark text-decoration-none">Pulsera 43</a></h2>
+                  </div>
+                  <div class="fw-bold fs-6 text-dark mt-1">$4.990</div>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid gap-2">
+                  <button type="button" class="btn btn-dark btn-sm rounded-pill btn-agregar-carrito py-2 fw-semibold" data-id="43" data-nombre="Pulsera 43" data-precio="4990">
+                    <i class="bi-cart-plus me-1"></i> Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="footer bg-marca text-white py-5">
+    <div class="container px-4 px-lg-5">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <h2 class="fw-bolder">ANTHE 《 Joyería Artesanal y Bisutería</h2>
+          <p class="text-white-50 mb-0">•Desde Los Andes para ti!🇨🇱<br>•Perlas y mostacillas hechas arte💫<br>•Pedidos y consultas al DM.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <h3 class="fw-bolder">Navegación</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a class="link-light text-decoration-none" href="index.html">Inicio</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#destacados">Productos</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#destacados">Populares</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#destacados">Nuevos</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#contacto">Sobre nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <h3 class="fw-bolder">Contacto</h3>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bi-envelope me-2"></i>anthe.joyeria.bisuteria@gmail.cl</li>
+            <li><i class="bi-whatsapp me-2"></i>+56 9 8667 1499</li>
+          </ul>
+          <div class="mt-3">
+            <a class="link-light me-3 fs-5" href="https://www.instagram.com/anthebisuteria/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi-instagram"></i></a>
+            <a class="link-light me-3 fs-5" href="https://www.tiktok.com/@anthebisuteria" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="m-0 text-center text-white-50">Copyright © ANTHE 《 Joyería Artesanal y Bisutería 2026</p>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+    <div id="liveToast" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi-check-circle-fill text-success fs-5"></i>
+          <span id="toast-mensaje">Producto agregado al carrito.</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/56986671499" class="btn-whatsapp-flotante" target="_blank" rel="noopener" aria-label="Contacto WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

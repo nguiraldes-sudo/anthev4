@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Revisa y administra tu selección de productos Anthe.">
+  <title>Carrito | Anthe Shop</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar py-1 text-center">
+    <div class="top-bar-marquee">✨ Entregas presenciales en San Felipe y Los Andes &nbsp;&bull;&nbsp; Envíos a todo Chile 🇨🇱 &nbsp;&bull;&nbsp; ✨ Entregas presenciales en San Felipe y Los Andes &nbsp;&bull;&nbsp; Envíos a todo Chile 🇨🇱</div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Navegación principal">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logosinfondo.png" alt="Logo Anthe Shop" class="logo-navbar" width="2838" height="2856">
+        <span>Anthe Shop</span>
+      </a>
+      <button class="navbar-toggler" id="menuToggle" type="button" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="menuPrincipal" aria-hidden="true" inert>
+        <div class="menu-panel-header">
+          <h2 class="menu-panel-title">Menú</h2>
+          <button class="btn-close btn-close-white" type="button" data-menu-close aria-label="Cerrar menú"></button>
+        </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" id="menuShop" type="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuShop">
+              <li><a class="dropdown-item" href="index.html#destacados">Todos los productos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html#destacados">Pulseras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#destacados">Populares</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#destacados">Nuevos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacto">Sobre nosotros</a></li>
+        </ul>
+        <a class="btn btn-outline-light ms-lg-3" href="carrito.html" aria-current="page">
+          <i class="bi-cart-fill me-1" aria-hidden="true"></i> Carrito <span id="contador-carrito" class="badge ms-1 rounded-pill">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container px-4 px-lg-5 cart-page">
+    <p class="cart-eyebrow">Tu selección</p>
+    <h1>Carrito de compra</h1>
+    <p class="cart-intro">Revisa tus piezas antes de continuar.</p>
+
+    <section id="cart-empty" class="cart-empty" aria-labelledby="cart-empty-title" hidden>
+      <i class="bi bi-bag-heart" aria-hidden="true"></i>
+      <h2 id="cart-empty-title">Tu carrito está vacío</h2>
+      <p>Explora la colección y encuentra una pieza hecha especialmente para ti.</p>
+      <a class="btn btn-dark rounded-pill px-4 mt-3" href="index.html#destacados">Ver productos</a>
+    </section>
+
+    <section id="cart-content" aria-label="Productos en tu carrito" hidden>
+      <div class="table-responsive cart-table-wrap">
+        <table class="table cart-table align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col"><span class="visually-hidden">Quitar</span></th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+        </table>
+      </div>
+      <div class="cart-summary">
+        <button class="btn btn-link cart-clear" type="button" data-cart-action="clear">Vaciar carrito</button>
+        <p class="cart-total mb-0"><span>Total</span><strong id="cart-total">$0</strong></p>
+      </div>
+      <p class="cart-note"><i class="bi bi-info-circle me-1" aria-hidden="true"></i>El envío se coordina al confirmar tu compra.</p>
+      <a class="btn btn-dark rounded-pill px-4" href="https://wa.me/56986671499" target="_blank" rel="noopener">Continuar por WhatsApp <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
+      <a class="cart-continue-link" href="index.html#destacados">Seguir viendo productos</a>
+    </section>
+
+    <template id="cart-row-template">
+      <tr>
+        <th scope="row" class="cart-product-name"></th>
+        <td class="cart-unit-price"></td>
+        <td>
+          <div class="cart-quantity" role="group" aria-label="Cambiar cantidad">
+            <button class="quantity-button" type="button" data-cart-action="decrease" aria-label="Disminuir cantidad">−</button>
+            <span class="quantity" aria-live="polite"></span>
+            <button class="quantity-button" type="button" data-cart-action="increase" aria-label="Aumentar cantidad">+</button>
+          </div>
+        </td>
+        <td class="cart-line-total"></td>
+        <td><button class="remove-button" type="button" data-cart-action="remove" aria-label="Quitar producto"><i class="bi bi-trash" aria-hidden="true"></i></button></td>
+      </tr>
+    </template>
+  </main>
+
+  <footer id="contacto" class="bg-marca text-white py-5 mt-5">
+    <div class="container px-4 px-lg-5">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <h2 class="fw-bolder">ANTHE 《 Joyería Artesanal y Bisutería</h2>
+          <p class="text-white-50 mb-0">•Desde Los Andes para ti!🇨🇱<br>•Perlas y mostacillas hechas arte💫<br>•Pedidos y consultas al DM.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <h3 class="fw-bolder">Navegación</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a class="link-light text-decoration-none" href="index.html">Inicio</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#destacados">Productos</a></li>
+            <li><a class="link-light text-decoration-none" href="index.html#contacto">Sobre nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <h3 class="fw-bolder">Contacto</h3>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bi-envelope me-2" aria-hidden="true"></i>anthe.joyeria.bisuteria@gmail.cl</li>
+            <li><i class="bi-whatsapp me-2" aria-hidden="true"></i>+56 9 8667 1499</li>
+          </ul>
+          <div class="mt-3">
+            <a class="link-light me-3 fs-5" href="https://www.instagram.com/anthebisuteria/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi-instagram" aria-hidden="true"></i></a>
+            <a class="link-light me-3 fs-5" href="https://www.tiktok.com/@anthebisuteria" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="m-0 text-center text-white-50">Copyright © ANTHE 《 Joyería Artesanal y Bisutería 2026</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56986671499" class="btn-whatsapp-flotante" target="_blank" rel="noopener" aria-label="Contacto WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/inicio.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>
